@@ -358,10 +358,6 @@ class Network:
         if self.hidden_act != "gelu":
             raise ValueError("Only GELU activation implemented.")
 
-        self.strides = None
-        self.offsets = None
-        self.fields = None
-
 
     def build(self, seq_length = 128, **kwargs):
 
